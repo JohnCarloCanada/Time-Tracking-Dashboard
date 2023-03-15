@@ -1,0 +1,89 @@
+.work {
+  background-color: var(--LIGHT--RED-WORK);
+}
+.play {
+  background-color: var(--SOFT--BLUE--PLAY);
+}
+.study {
+  background-color: var(--LIGHT--RED-STUDY);
+}
+.exercise {
+  background-color: var(--LIME--GREEN-EXERCISE);
+}
+.social {
+  background-color: var(--VIOLET--SOCIAL);
+}
+.selfcare {
+  background-color: var(--SOFT--ORANGE-SELFCARE);
+}
+
+img[alt="ellipsis"] {
+  cursor: pointer;
+}
+
+.sub__grid {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: 97% -10px;
+}
+
+.timeframes__info {
+  margin-top: 2rem;
+  background-color: var(--DARK--BLUE);
+  border-radius: 0.5rem 0.5rem 0 0;
+  transition: background-color 300ms ease-in;
+}
+
+.timeframes__info .header {
+  margin: 1rem 1.25rem;
+}
+
+.timeframes {
+  margin: 1rem 1.25rem;
+}
+
+.timeframes__info:hover {
+  background-color: hsl(246, 80%, 60%);
+  cursor: pointer;
+  transition: background-color 300ms ease-in;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h3 {
+  color: white;
+  font-size: clamp(0.85rem, 0.8286rem + 0.1143vw, 0.9rem);
+  font-weight: 500;
+}
+
+.timeframes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timeframes h2 {
+  font-weight: 300;
+  color: white;
+  font-size: clamp(1.5rem, 1.4571rem + 0.2286vw, 1.6rem);
+}
+
+.timeframes h3 {
+  font-weight: 300;
+  color: var(--DESATURATED--BLUE);
+  font-size: clamp(0.75rem, 0.7286rem + 0.1143vw, 0.8rem);
+}
+
+@media only screen and (min-width: 500px) {
+  .timeframes {
+    flex-direction: column;
+    row-gap: 0.25rem;
+    align-items: flex-start;
+  }
+}

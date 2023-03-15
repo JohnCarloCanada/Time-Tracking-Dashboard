@@ -1,0 +1,20 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--VERY--DARK--BLUE);
+  padding: 1.5rem 0;
+}
+
+.no-split {
+  white-space: nowrap;
+}
+
+.grid__container {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 0 2rem;
+  gap: 1rem;
+}
