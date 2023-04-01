@@ -127,17 +127,17 @@ const DataProvider = ({ children }) => {
     if (isSubscribed) {
       if (timeframe === "Daily") {
         const newData = data.map((item) => {
-          return { title: item.title, image: item.image, timeframes: item.timeframes.daily };
+          return { ...item, timeframes: item.timeframes.daily };
         });
         setFilteredData(newData);
       } else if (timeframe === "Weekly") {
         const newData = data.map((item) => {
-          return { title: item.title, image: item.image, timeframes: item.timeframes.weekly };
+          return { ...item, timeframes: item.timeframes.weekly };
         });
         setFilteredData(newData);
       } else {
         const newData = data.map((item) => {
-          return { title: item.title, image: item.image, timeframes: item.timeframes.monthly };
+          return { ...item, timeframes: item.timeframes.monthly };
         });
         setFilteredData(newData);
       }
